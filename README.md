@@ -137,8 +137,5 @@ AWS resources are created and destroyed with Terraform, and a billing alarm is s
 ## Author
 
 **Akhil Jajimoggala**: MSc Computer Science student and DevOps engineer based in London.
-[LinkedIn](https://www.linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username)
+[LinkedIn](https://www.linkedin.com/in/akhil-jajimoggala) · [GitHub](https://github.com/Akhil-jajimoggala)
 
-## License
-
-MIT. See [LICENSE](LICENSE).
