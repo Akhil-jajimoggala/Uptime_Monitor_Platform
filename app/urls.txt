@@ -1,3 +1,4 @@
 https://www.google.com/
 https://www.github.com/
+https://www.github.com/this-page-does-not-exist/
 https://www.thisdoesnotexist.rp/
