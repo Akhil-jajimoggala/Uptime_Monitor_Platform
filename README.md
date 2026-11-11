@@ -77,7 +77,7 @@ Uptime_Monitor_Platform/
 ├── infra/terraform/     # AWS infrastructure
 ├── .github/workflows/   # CI/CD pipelines
 ├── docs/
-│   ├── journal/         # weekly progress notes
+│   ├── journal/         # progress notes
 │   ├── decisions/       # architecture decision records
 │   └── incidents/       # post-mortems
 ├── docker-compose.yml
