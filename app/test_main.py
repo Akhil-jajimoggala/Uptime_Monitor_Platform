@@ -1,14 +1,15 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from main import app, monitors
+from main import app
+from db import get_connection
 
 client = TestClient(app)
 
-
 @pytest.fixture(autouse=True)
-def clear_monitors():
-    monitors.clear()
+def clear_database():
+    with get_connection() as conn:
+        conn.execute("TRUNCATE monitors RESTART IDENTITY")
 
 
 def test_healthz():
