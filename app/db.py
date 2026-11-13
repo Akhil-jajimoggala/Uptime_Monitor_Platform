@@ -27,3 +27,15 @@ def init_db():
             )
             """
         )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS checks (
+                id SERIAL PRIMARY KEY,
+                monitor_id INTEGER NOT NULL REFERENCES monitors(id) ON DELETE CASCADE,
+                is_up BOOLEAN NOT NULL,
+                result TEXT NOT NULL,
+                response_time DOUBLE PRECISION NOT NULL,
+                checked_at TIMESTAMPTZ NOT NULL DEFAULT now()
+            )
+            """
+        )
